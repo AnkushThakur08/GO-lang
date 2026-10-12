@@ -77,3 +77,24 @@ func main() {
 	fmt.Println(port, host, db, password)
 
 ```
+
+
+## Looping
+- we have for loop in go
+- There are 2 different syntax for for loop in go
+
+### For while loop
+```go
+	i := 1
+	for i <= 10 {
+		fmt.Println(i)
+		i++
+	}
+```
+
+### For
+```go
+	for i := 1; i <= 10; i++ {
+		fmt.Println(i)
+	}
+```

@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
 	isLoggedIn := false
@@ -16,6 +19,7 @@ func main() {
 
 	}
 
+	// Switch Statement
 	marks := 90
 
 	switch marks {
@@ -29,7 +33,7 @@ func main() {
 		fmt.Println("You got C")
 	}
 
-	// type switch₹
+	// type switch
 	whoIAm := func(i interface{}) {
 		switch i.(type) {
 		case int:
@@ -47,7 +51,6 @@ func main() {
 	whoIAm(67)
 
 	// Array
-
 	var myArray [5]int
 	myArray[0] = 1
 	myArray[1] = 2
@@ -92,5 +95,7 @@ func main() {
 	var nums []int
 
 	fmt.Println(nums == nil)
+
+	fmt.Println(time.Now().Weekday())
 
 }
